@@ -17,6 +17,7 @@ import java.io.Serializable;
 @NoArgsConstructor
 @AllArgsConstructor
 @Accessors(chain = true)
+@Builder
 @ApiModel(value = "响应信息主体")
 public class R<T> implements Serializable {
 	private static final long serialVersionUID = 1L;
@@ -46,6 +47,14 @@ public class R<T> implements Serializable {
 	}
 
 	public static <T> R<T> ok(T data, String msg) {
+		return restResult(data, CommonConstants.SUCCESS, msg);
+	}
+
+	public static <T> R<T> ok(int code, String msg) {
+		return restResult(null, CommonConstants.SUCCESS, msg);
+	}
+
+	public static <T> R<T> ok(T data,int code,String msg) {
 		return restResult(data, CommonConstants.SUCCESS, msg);
 	}
 

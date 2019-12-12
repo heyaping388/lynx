@@ -11,11 +11,12 @@ import org.springframework.web.reactive.function.server.ServerResponse;
 import org.springframework.web.server.ServerWebExchange;
 import reactor.core.publisher.Mono;
 import static org.springframework.web.reactive.function.BodyInserters.fromValue;
+//import static org.springframework.web.reactive.function.BodyInserters.fromObject;
 
 /**
  * @Auther: xhe
- * @Date: 2019/12/9 09:49
- * @Description:
+ * @Date: 2019/11/5 13:25
+ * @Description: 限流配置
  */
 @Slf4j
 @Configuration

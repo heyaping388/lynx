@@ -11,6 +11,7 @@
         <module>lynx-gateway</module>
         <module>lynx-common</module>
         <module>lynx-business</module>
+        <module>lynx-auth</module>
     </modules>
     <packaging>pom</packaging>
     <description>lynx父工程</description>

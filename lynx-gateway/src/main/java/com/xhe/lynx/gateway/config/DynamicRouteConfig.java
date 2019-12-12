@@ -8,13 +8,9 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 /**
- * 动态路由配置
- *
- * @author zlt
- * @date 2019/10/7
- * <p>
- * Blog: https://blog.csdn.net/zlt2000
- * Github: https://github.com/zlt2000
+ * @Auther: xhe
+ * @Date: 2019/11/5 13:25
+ * @Description: 动态路由配置
  */
 @Configuration
 public class DynamicRouteConfig {

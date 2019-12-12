@@ -1,0 +1,17 @@
+server:
+  port: 8002
+spring:
+  application:
+    name: lynx-auth
+  cloud:
+    nacos:
+      discovery:
+        server-addr: ${lynx.nacos.server-addr}
+      config:
+        server-addr: ${lynx.nacos.server-addr}
+        file-extension: yml
+        shared-dataids: common.yml
+        refreshable-dataids: common.yml
+lynx:
+  nacos:
+    server-addr: localhost:8848
