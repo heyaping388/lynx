@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: lynx-user-center
+  cloud:
+    nacos:
+      discovery:
+        server-addr: ${xhe.nacos.server-addr}
+      config:
+        server-addr: ${xhe.nacos.server-addr}
+        file-extension: yml
+        shared-dataids: common.yml
+        refreshable-dataids: common.yml
+server:
+  port: 8001
+xhe:
+  nacos:
+    server-addr: localhost:8848

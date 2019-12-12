@@ -1,0 +1,23 @@
+spring:
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          lower-case-service-id: false
+          enabled: true
+      routes:
+        - id: user-center
+          uri: lb://lynx-user-center
+          predicates:
+            - Path=/user-center/**
+          filters:
+            - StripPrefix=1
+            - PreserveHostHeader
+    sentinel:
+      datasource:
+        ds1:
+          nacos:
+            server-addr: 127.0.0.1:8848
+            dataId: flow-rules
+            data-type: json
+            rule-type: flow
