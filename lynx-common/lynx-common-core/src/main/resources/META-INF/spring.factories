@@ -1,0 +1,4 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+  com.xhe.lynx.common.core.config.JacksonConfig,\
+  com.xhe.lynx.common.core.config.RestConfig,\
+  com.xhe.lynx.common.core.util.SpringContextHolder
