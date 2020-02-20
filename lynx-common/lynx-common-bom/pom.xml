@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.xhe</groupId>
+    <artifactId>lynx-common-bom</artifactId>
+    <description>lynx 公共版本控制</description>
+    <packaging>pom</packaging>
+    <version>1.0.0</version>
+
+    <properties>
+        <!--依赖版本-->
+        <mybatis-plus.version>3.3.0</mybatis-plus.version>
+        <druid.version>1.1.20</druid.version>
+        <mysql.connector.version>8.0.18</mysql.connector.version>
+        <swagger.core.version>1.5.22</swagger.core.version>
+        <spring-boot-maven-plugin.version>2.2.1.RELEASE</spring-boot-maven-plugin.version>
+        <httpclient.version>4.5.3</httpclient.version>
+        <hutool.version>5.1.0</hutool.version>
+        <lynx.version>1.0.0</lynx.version>
+    </properties>
+
+    <dependencyManagement>
+        <dependencies>
+            <!--swagger 依赖-->
+            <dependency>
+                <groupId>io.swagger</groupId>
+                <artifactId>swagger-annotations</artifactId>
+                <version>${swagger.core.version}</version>
+            </dependency>
+            <!--mybatis plus extension,包含了mybatis plus core-->
+            <dependency>
+                <groupId>com.baomidou</groupId>
+                <artifactId>mybatis-plus-extension</artifactId>
+                <version>${mybatis-plus.version}</version>
+            </dependency>
+            <!--mybatis-->
+            <dependency>
+                <groupId>com.baomidou</groupId>
+                <artifactId>mybatis-plus-boot-starter</artifactId>
+                <version>${mybatis-plus.version}</version>
+            </dependency>
+            <!-- druid 连接池 -->
+            <!-- https://mvnrepository.com/artifact/com.alibaba/druid-spring-boot-starter -->
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>druid-spring-boot-starter</artifactId>
+                <version>${druid.version}</version>
+            </dependency>
+            <!--mysql 驱动-->
+            <dependency>
+                <groupId>mysql</groupId>
+                <artifactId>mysql-connector-java</artifactId>
+                <version>${mysql.connector.version}</version>
+            </dependency>
+            <!--http客户端-->
+            <dependency>
+                <groupId>org.apache.httpcomponents</groupId>
+                <artifactId>httpclient</artifactId>
+                <version>${httpclient.version}</version>
+            </dependency>
+            <!--hutool工具包-->
+            <dependency>
+                <groupId>cn.hutool</groupId>
+                <artifactId>hutool-core</artifactId>
+                <version>${hutool.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.xhe</groupId>
+                <artifactId>lynx-common-core</artifactId>
+                <version>${lynx.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.xhe</groupId>
+                <artifactId>lynx-common-datasource</artifactId>
+                <version>${lynx.version}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+</project>
