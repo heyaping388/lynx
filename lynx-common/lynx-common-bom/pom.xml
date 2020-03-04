@@ -14,10 +14,12 @@
         <mybatis-plus.version>3.3.0</mybatis-plus.version>
         <druid.version>1.1.20</druid.version>
         <mysql.connector.version>8.0.18</mysql.connector.version>
-        <swagger.core.version>1.5.22</swagger.core.version>
         <spring-boot-maven-plugin.version>2.2.1.RELEASE</spring-boot-maven-plugin.version>
         <httpclient.version>4.5.3</httpclient.version>
         <hutool.version>5.1.0</hutool.version>
+        <swagger.core.version>1.5.22</swagger.core.version>
+        <swagger.fox.version>2.9.2</swagger.fox.version>
+        <knife4j.version>2.0.1</knife4j.version>
         <lynx.version>1.0.0</lynx.version>
     </properties>
 
@@ -28,6 +30,18 @@
                 <groupId>io.swagger</groupId>
                 <artifactId>swagger-annotations</artifactId>
                 <version>${swagger.core.version}</version>
+            </dependency>
+            <!--swagger 依赖-->
+            <dependency>
+                <groupId>io.springfox</groupId>
+                <artifactId>springfox-swagger2</artifactId>
+                <version>${swagger.fox.version}</version>
+            </dependency>
+            <!--knife4j是为Java MVC框架集成Swagger生成Api文档的增强-->
+            <dependency>
+                <groupId>com.github.xiaoymin</groupId>
+                <artifactId>knife4j-spring-boot-starter</artifactId>
+                <version>${knife4j.version}</version>
             </dependency>
             <!--mybatis plus extension,包含了mybatis plus core-->
             <dependency>
@@ -74,6 +88,11 @@
             <dependency>
                 <groupId>com.xhe</groupId>
                 <artifactId>lynx-common-datasource</artifactId>
+                <version>${lynx.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.xhe</groupId>
+                <artifactId>lynx-common-swagger</artifactId>
                 <version>${lynx.version}</version>
             </dependency>
         </dependencies>
