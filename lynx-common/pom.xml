@@ -17,5 +17,6 @@
         <module>lynx-common-datasource</module>
         <module>lynx-common-bom</module>
         <module>lynx-common-swagger</module>
+        <module>lynx-common-redis</module>
     </modules>
 </project>
