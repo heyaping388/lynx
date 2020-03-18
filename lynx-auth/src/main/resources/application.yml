@@ -1,0 +1,21 @@
+spring:
+  security:
+    oauth2:
+      client:
+        registration:
+          web:
+            client-id: web
+            client-secret: 123456
+            authorization-grant-type: password,refresh_token,authorization_code
+            scope: any
+            client-name: web端
+          app:
+            client-id: app
+            client-secret: 123456
+            authorization-grant-type: password,refresh_token,authorization_code
+            scope: any
+            client-name: app端
+  application:
+    name: @artifactId@
+  profiles:
+    active: dev
