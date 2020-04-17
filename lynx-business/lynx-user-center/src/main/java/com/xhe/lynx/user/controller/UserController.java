@@ -6,6 +6,9 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import javax.servlet.http.HttpServletRequest;
+import java.util.Enumeration;
+
 /**
  * @Auther: xhe
  * @Date: 2019/12/11 17:34
@@ -17,8 +20,9 @@ import org.springframework.web.bind.annotation.RestController;
 public class UserController {
 
     @GetMapping("/list")
-    public R list(){
-       log.info("查询用户列表");
+    public R list(HttpServletRequest request){
+        Enumeration<String> headerNames = request.getHeaderNames();
+        log.info("查询用户列表");
        return R.ok("查询用户列表成功");
     }
 }
