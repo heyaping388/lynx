@@ -1,4 +1,4 @@
-package com.xhe.common.datasource.redis;
+package com.xhe.common.redis.config;
 
 import cn.hutool.core.date.DatePattern;
 import com.fasterxml.jackson.annotation.JsonAutoDetect;
