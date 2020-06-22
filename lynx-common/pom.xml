@@ -18,5 +18,6 @@
         <module>lynx-common-bom</module>
         <module>lynx-common-swagger</module>
         <module>lynx-common-redis</module>
+        <module>lynx-common-async</module>
     </modules>
 </project>

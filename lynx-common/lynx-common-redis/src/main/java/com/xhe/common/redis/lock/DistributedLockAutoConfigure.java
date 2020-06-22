@@ -22,7 +22,7 @@ public class DistributedLockAutoConfigure {
 
 	@Bean
 	@ConditionalOnBean(RedisTemplate.class)
-	@ConditionalOnProperty(prefix = "zhcx.business.redis.lock",name = "enabled",havingValue = "true",matchIfMissing = true)
+	@ConditionalOnProperty(prefix = "lynx.redis.lock",name = "enabled",havingValue = "true",matchIfMissing = true)
 	public DistributedLock redisDistributedLock(RedisTemplate<Object, Object> redisTemplate){
 		return new RedisDistributedLock(redisTemplate);
 	}
