@@ -43,6 +43,7 @@ public class RedisAutoConfigure {
         redisTemplate.setConnectionFactory(factory);
 
         RedisSerializer<String> stringSerializer = new StringRedisSerializer();
+        //使用Jackson序列化
         Jackson2JsonRedisSerializer<Object> redisObjectSerializer = new Jackson2JsonRedisSerializer<>(Object.class);
 
         Jackson2ObjectMapperBuilder builder = new Jackson2ObjectMapperBuilder();
