@@ -21,7 +21,7 @@ import java.util.Map;
 /**
  * @Auther: xhe
  * @Date: 2019/12/12 15:36
- * @Description:
+ * @Description: 认证服务器配置
  */
 @Slf4j
 @Component
