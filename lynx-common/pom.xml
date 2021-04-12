@@ -19,5 +19,6 @@
         <module>lynx-common-swagger</module>
         <module>lynx-common-redis</module>
         <module>lynx-common-async</module>
+        <module>lynx-common-zk</module>
     </modules>
 </project>
