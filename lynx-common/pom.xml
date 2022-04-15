@@ -20,5 +20,6 @@
         <module>lynx-common-redis</module>
         <module>lynx-common-async</module>
         <module>lynx-common-zk</module>
+        <module>lynx-common-redis-jedis</module>
     </modules>
 </project>
