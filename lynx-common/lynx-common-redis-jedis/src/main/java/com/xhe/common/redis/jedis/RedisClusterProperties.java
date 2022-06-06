@@ -1,4 +1,4 @@
-package com.tts.delta.common.redis;
+package com.xhe.common.redis.jedis;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.context.annotation.Configuration;
