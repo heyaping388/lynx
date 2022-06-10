@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * @author rock.he
+ * @author xhe
  */
 @Configuration
 @ConfigurationProperties(prefix = "spring.redis.cluster")
