@@ -16,7 +16,7 @@
         <mysql.connector.version>8.0.18</mysql.connector.version>
         <spring-boot-maven-plugin.version>2.2.1.RELEASE</spring-boot-maven-plugin.version>
         <httpclient.version>4.5.13</httpclient.version>
-        <hutool.version>5.1.0</hutool.version>
+        <hutool.version>5.8.19</hutool.version>
         <swagger.core.version>1.5.22</swagger.core.version>
         <swagger.fox.version>2.9.2</swagger.fox.version>
         <knife4j.version>2.0.1</knife4j.version>
